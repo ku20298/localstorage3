@@ -9,14 +9,9 @@ func SetItem(tag string, a interface{}) {
 	js.Global.Get("localStorage").Call("setItem", tag, a)
 }
 
-// GetItem2 calls localstorage.getItem()
-func GetItem2(tag string) string {
-	return js.Global.Get("localStorage").Call("getItem", tag).String()
-}
-
 // GetItem calls localstorage.getItem()
-func GetItem(tag string) interface{} {
-	return js.Global.Get("localStorage").Call("getItem", tag).Interface()
+func GetItem(tag string) string {
+	return js.Global.Get("localStorage").Call("getItem", tag).String()
 }
 
 // RemoveItem calls localstorage.removeItem()
