@@ -1,4 +1,4 @@
-package localstorage
+package localstorage3
 
 import (
 	"github.com/gopherjs/gopherjs/js"
